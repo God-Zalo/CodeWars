@@ -1,17 +1,17 @@
 
-def RowCalculator(x):
+def RowCalculator(n):
 	# First number of each row
-	n=(x*x)-(x-1)
-	c = n
+	a=(n*n)-(n-1)
+	c = a
 
 	# Calculate and sum remaining numbers
-	for x in range(x-1):
-		n = n+2
-		c = c+n
+	for n in range(n-1):
+		a = a+2
+		c = c+a
 	print('The total sum is: ' + str(c))
 
 print('Select the row to be calculated')
 
-a = int(input())
+n = int(input())
 
-RowCalculator(a)
+RowCalculator(n)
